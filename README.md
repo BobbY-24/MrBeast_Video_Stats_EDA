@@ -1,43 +1,35 @@
 # MrBeast YouTube Video Statistics EDA
 
 ## Overview
-This project cleans and explores a dataset of MrBeast YouTube video statistics. It focuses on exploratory data analysis, outlier detection, and preparing a cleaned version of the dataset. The project is a compact EDA example using media analytics data.
+I cleaned and explored a dataset of MrBeast YouTube video statistics. I focus on exploratory data analysis, outlier detection, and preparing a cleaned version of the dataset.
 
 ## Motivation
-YouTube analytics data provides a practical setting for cleaning messy real-world data and identifying outliers. This project demonstrates early data analysis skills: loading a dataset, inspecting distributions, detecting unusual points, and preparing data for further analysis.
+I used this project to practice working with media analytics data. YouTube performance data is naturally noisy and outlier-heavy, which makes it useful for learning careful EDA.
 
 ## Dataset
 - **Source:** Kaggle MrBeast YouTube statistics dataset.
 - **File:** `data/mr_beast_youtube_stats.csv`
-- **Target variable:** Not applicable for the current EDA version.
-- **Important features:** TODO: add important columns after rerunning notebook.
-- **Dataset size:** TODO: add dataset size after rerunning notebook.
-- **Known limitations:** Video performance is affected by timing, platform algorithms, audience behavior, and content strategy; EDA does not prove causality.
+- **Target variable:** I did not define a supervised target for this version.
+- **Known limitations:** Video performance depends on timing, platform algorithms, audience behavior, and content strategy, so I treat the analysis as descriptive.
 
 ## Methods
-- Loaded and inspected YouTube statistics data.
-- Cleaned selected fields.
-- Identified outlier data points.
-- Prepared processed output in `results/`.
+- I loaded and inspected YouTube statistics data.
+- I cleaned selected fields.
+- I identified unusual data points.
+- I prepared processed output in `results/`.
 
 ## Results
-TODO: add metric after rerunning notebook.
+I use this repo for data cleaning and exploratory analysis rather than a model metric. The main result is a cleaner dataset and an initial understanding of outliers in video performance.
 
 ## Key Insights
-- TODO: add insight after rerunning notebook.
-- TODO: add insight after rerunning notebook.
-- TODO: add insight after rerunning notebook.
+- Viral video data naturally contains extreme values.
+- Outliers should be explained, not automatically removed.
+- I treat the project as strongest as an EDA and data-cleaning example.
 
 ## Limitations
 - The analysis is descriptive only.
-- Outliers should be interpreted carefully because viral content naturally creates extreme values.
 - The dataset may not include all relevant platform or timing variables.
-
-## Future Improvements
-- Add clear visualizations of views, likes, comments, and upload timing.
-- Add outlier-method documentation.
-- Compare results against other YouTube channels.
-- Add a short media analytics summary.
+- I do not make causal claims about why videos perform well.
 
 ## How to Run
 ```bash
